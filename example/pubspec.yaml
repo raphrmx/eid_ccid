@@ -1,0 +1,25 @@
+name: eid_ccid_example
+description: >-
+  Reads a Belgian eID through a USB card reader, with every command logged,
+  to try eid_ccid and eid_belgium on real cards.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.0
+  flutter: '>=3.24.0'
+
+dependencies:
+  eid_belgium: ^0.1.0
+  eid_ccid:
+    path: ../
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^2.8.0
+
+flutter:
+  uses-material-design: true

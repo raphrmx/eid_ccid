@@ -1,0 +1,33 @@
+name: eid_ccid
+description: >-
+  Reads electronic identity cards through a USB or PC/SC card reader, on
+  Android, iOS, macOS, Windows and Linux. The eid transport for the ccid
+  plugin.
+version: 0.1.0
+homepage: https://packages.comapps.be/#eid_ccid
+repository: https://github.com/raphrmx/eid_ccid
+issue_tracker: https://github.com/raphrmx/eid_ccid/issues
+funding:
+  - https://www.paypal.com/donate/?hosted_button_id=ZN6D382YQAV5N
+topics:
+  - eid
+  - smartcard
+  - pcsc
+  - ccid
+  - identity
+
+environment:
+  sdk: ^3.5.0
+  flutter: '>=3.24.0'
+
+dependencies:
+  ccid: ^0.1.9
+  dart_pcsc: ^2.0.2
+  eid: ^0.1.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^2.8.0
