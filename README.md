@@ -1,5 +1,6 @@
 # eid_ccid
 
+[![Video tour](https://img.shields.io/badge/Video-Guided_tour-c4302b?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=oH_-1EU7DNc)
 [![Pub Version](https://img.shields.io/pub/v/eid_ccid?color=0175C2)](https://pub.dev/packages/eid_ccid)
 [![Build](https://img.shields.io/github/actions/workflow/status/raphrmx/eid_ccid/ci.yml?branch=main&label=build)](https://github.com/raphrmx/eid_ccid/actions/workflows/ci.yml)
 ![Maintainer](https://img.shields.io/badge/Maintainer-Raphael_Vrient-733d90)
