@@ -170,19 +170,22 @@ class _FlippableIdCardState extends State<FlippableIdCard>
             },
           ),
         ),
-        if (widget.eid != null) ...[
-          const SizedBox(height: 10),
-          AnimatedBuilder(
+        const SizedBox(height: 10),
+        // Its room is kept before a read, so nothing moves when it shows.
+        AnimatedOpacity(
+          opacity: widget.eid == null ? 0 : 1,
+          duration: const Duration(milliseconds: 300),
+          child: AnimatedBuilder(
             animation: _turn,
             builder: (context, _) => TextButton.icon(
-              onPressed: _flip,
+              onPressed: widget.eid == null ? null : _flip,
               icon: const Icon(Icons.flip_outlined, size: 18),
               label: Text(
                 _turn.value < 0.5 ? 'Turn the card over' : 'Back to the front',
               ),
             ),
           ),
-        ],
+        ),
       ],
     );
   }
