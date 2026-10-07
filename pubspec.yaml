@@ -26,7 +26,7 @@ environment:
 dependencies:
   ccid: ^0.1.9
   dart_pcsc: ^2.0.2
-  eid: ^0.1.0
+  eid: ^0.1.1
   flutter:
     sdk: flutter
 
