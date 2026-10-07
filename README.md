@@ -12,6 +12,8 @@ Reads electronic identity cards through a USB or PC/SC card reader in
 Flutter: the `eid` transport for the [ccid](https://pub.dev/packages/ccid)
 plugin.
 
+![Which packages for which document: a Belgian card in a USB reader takes eid_belgium and eid_ccid and needs no key; a passport or an EU identity card takes eid_icao, with eid_nfc on a phone or eid_ccid on a contactless USB reader, and needs the CAN or the MRZ](https://public.comapps.be/packages/eid/eid_situations.svg)
+
 ## Install
 
 ```yaml
@@ -61,7 +63,9 @@ Electronic identity cards in Dart:
 | Package | What it does |
 | --- | --- |
 | [eid](https://pub.dev/packages/eid) | APDUs, ISO 7816-4 file reading and the values national cards share. |
-| [eid_belgium](https://pub.dev/packages/eid_belgium) | Reads the Belgian eID, Kids ID and residence cards. |
+| [eid_belgium](https://pub.dev/packages/eid_belgium) | The Belgian eID, Kids ID and residence cards, through their contact chip. |
+| [eid_icao](https://pub.dev/packages/eid_icao) | Passports and identity cards with an ICAO 9303 chip. |
+| [eid_nfc](https://pub.dev/packages/eid_nfc) | The transport for the NFC of an Android phone or an iPhone. |
 
 Every package COMAPPS publishes is listed at
 [packages.comapps.be](https://packages.comapps.be).

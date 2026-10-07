@@ -42,6 +42,7 @@ class EidSession extends ChangeNotifier {
   bool _acceptExpired = false;
   bool _verifySignatures = true;
   bool _verifyCard = true;
+  bool _showPrivateData = false;
 
   /// Whether a card is read as soon as it goes in: `autoRead`.
   bool get autoRead => _autoRead;
@@ -84,6 +85,11 @@ class EidSession extends ChangeNotifier {
 
   set verifyCard(bool value) => _configure(() => _verifyCard = value);
 
+  /// Whether the national register number is read: `showPrivateData`.
+  bool get showPrivateData => _showPrivateData;
+
+  set showPrivateData(bool value) => _configure(() => _showPrivateData = value);
+
   void _configure(void Function() change) {
     change();
     final watcher = _watcher;
@@ -100,6 +106,7 @@ class EidSession extends ChangeNotifier {
       ..rememberPhotos = _rememberPhotos
       ..verifySignatures = _verifySignatures
       ..verifyCard = _verifyCard
+      ..showPrivateData = _showPrivateData
       ..onProgress = _onProgress
       ..onApdu = _record;
   }

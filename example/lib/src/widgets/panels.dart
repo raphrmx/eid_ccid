@@ -296,6 +296,12 @@ class OptionsPanel extends StatelessWidget {
           part(BelgianEidPart.photo, 'Read the photo'),
           part(BelgianEidPart.address, 'Read the address'),
           part(BelgianEidPart.nationalNumber, 'Read the national number'),
+          _Option(
+            title: 'Show private data',
+            code: 'showPrivateData',
+            value: session.showPrivateData,
+            onChanged: (value) => session.showPrivateData = value,
+          ),
           const Divider(height: 20),
           _Option(
             title: 'Remember photos',

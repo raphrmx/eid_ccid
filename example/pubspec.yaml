@@ -10,7 +10,7 @@ environment:
   flutter: '>=3.24.0'
 
 dependencies:
-  eid_belgium: ^0.1.0
+  eid_belgium: ^0.1.1
   eid_ccid:
     path: ../
   flutter:

@@ -394,6 +394,8 @@ class _DotMatrix extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
+    // A zero pitch would never end the loops below.
+    if (size.isEmpty) return;
     final pitch = size.height / 18;
     final paint = Paint()
       ..color = const Color(0xFF0A0C0B).withValues(alpha: 0.55)

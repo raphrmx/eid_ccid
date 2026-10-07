@@ -1153,6 +1153,9 @@ class _SecurityPrint extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
+    // Laid out at zero size before the first frame on Android: the waves
+    // below would never end.
+    if (size.isEmpty) return;
     final rect = Offset.zero & size;
     canvas.drawRect(
       rect,

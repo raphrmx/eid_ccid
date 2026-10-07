@@ -3,7 +3,7 @@ description: >-
   Reads electronic identity cards through a USB or PC/SC card reader, on
   Android, iOS, macOS, Windows and Linux. The eid transport for the ccid
   plugin.
-version: 0.1.0
+version: 0.1.1
 homepage: https://packages.comapps.be/#eid_ccid
 repository: https://github.com/raphrmx/eid_ccid
 issue_tracker: https://github.com/raphrmx/eid_ccid/issues
@@ -15,6 +15,9 @@ topics:
   - pcsc
   - ccid
   - identity
+screenshots:
+  - description: Which packages to add for a Belgian card or a passport, the key each needs and what the read gives back.
+    path: screenshots/situations.png
 
 environment:
   sdk: ^3.5.0
